@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contactanos</title>
+    <meta name="Cafe,
+especialidad, tipos de cafe, cafe origen, filtrado.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+<body>
+<!-- Header-->
+<header class="contenedor-grid-nav">
+  <div class="logo"> 
+    <a href="..\index.html">
+    <img src="..\assets\img\Logo.png">
+    </a>
+  </div>    
+  <div class="respmenu">
+    <input type="checkbox">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times"></i>
+    <nav>
+      <ul>
+        <li><a href="..\index.html">Home</a></li>
+        <li><a href="..\pages\variedades.html">Variedades</a></li>
+        <li><a href="..\pages\metodos.html">Metodos</a></li>
+        <li><a href="..\pages\nosotros.html">Nosotros</a></li>
+        <li><a href="..\pages\contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>  
+</header>
+
+<!-- End Header -->
+<!-- Main --> 
+<div class="">
+<div class="row">
+ <div class="col-lg-4 col-xs-12">
+<img class="img-fluid" src="..\assets\img\natha.jpg ">
+ </div> 
+<div class="col-lg-8 col-xs-12 border">
+<form method="POST" action="/index.php" class="needs-validation" novalidate>
+
+    <div class="form-row mt-5">
+        <div class="col-md-4 mb-3">
+            <label for="validarNombre">Nombre:<span class="red">*</span></label>
+            <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
+            <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validarEmail">Email:<span class="red">*</span></label>
+            <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validarTelefono">Teléfono:</label>
+            <input type="number" class="form-control" id="validarTelefono" name="validarTelefono" max="999999999">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validarTema">Tema:<span class="red">*</span></label>
+            <select class="custom-select" id="validarTema" name="validarTema" required>
+                <option selected disabled value="">Selecciona...</option>
+                <option value="Problema con acceso a Web">Problema con acceso a Web</option>
+                <option value="Propuesta de colaboración">Propuesta de colaboración</option>
+                <option value="Eliminar mi usuario de la Web">Eliminar mi usuario de la Web</option>
+                <option value="Otras cuestiones">Otras cuestiones</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validarAsunto">Asunto:</label>
+            <input type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="validationMensaje">Mensaje:<span class="red">*</span></label>
+        <textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25" required></textarea>
+    </div>
+
+    <div class="form-group mb-10">
+        <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+        <button class="btn btn-success" type="reset" name="reset">Limpiar</button>
+    </div>
+
+</form>
+</div>
+</div>  
+</div>
+<!-- END MAIN -->
+<!-- footer -->
+    <footer class="text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+            <!-- Github -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #333333;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+</footer>
+<!-- End Footer -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</div>
+
+
+</body>
+</html>

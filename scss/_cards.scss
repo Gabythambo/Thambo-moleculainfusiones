@@ -1,0 +1,37 @@
+/*MIXIN*/
+
+@mixin tamañoImagen($width,$heigth){
+    width:$width;
+    heigth:$heigth;
+}
+
+.card-img-top{
+@include tamañoImagen(100%,100%);}
+
+/*FIN MIXIN*/
+
+.card-block {
+    font-size: 18px;
+    position: relative;
+    margin: 10px;
+    padding: 1em;
+    border: solid;
+    border-top: 10px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+     
+}
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin: 20px 10px;
+    background-color: #c7beb1;
+    }
+
+div.cardsize {
+    align-self: center;
+ justify-self: center;
+}

@@ -1,0 +1,13 @@
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+
+.carousel-indicators .active {
+    background-color: rgb(99, 91, 59);
+    max-width: 12px;
+    margin: 0 3px;
+    height: 12px;
+}

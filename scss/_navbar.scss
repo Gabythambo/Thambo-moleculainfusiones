@@ -1,0 +1,26 @@
+  /*anidando nav*/
+
+.barra {
+padding-left: 0px;
+        padding-right: 0px;
+        background-color: $colornav;
+.nav-link { font-variant: small-caps;
+    text-shadow: 1px 1px black;
+    }
+}	
+.barra a {color: black !important;  
+          text-decoration:none;
+      &:hover {
+        color: $colbtnnav !important;
+        font-weight: bold;
+    }
+}	
+/*fin anidando nav*/
+
+li.nav-item {
+padding-right: 30px;
+margin: 0px;
+}
+
+div .collapse .navbar-collapse {width:100%;}
+.navbar-nav {width:100%;}
