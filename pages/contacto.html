@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Contactanos</title>
-    <meta name="Cafe,
-especialidad, tipos de cafe, cafe origen, filtrado.">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <meta name="Cafe,especialidad, tipos de cafe, cafe origen, filtrado.">
+    <script src="https://kit.fontawesome.com/7be959fe64.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+</head>
   </head>
 <body>
 <!-- Header-->
-<header class="contenedor-grid-nav">
+<header class="formulario contenedor-grid-nav">
   <div class="logo"> 
     <a href="..\index.html">
     <img src="..\assets\img\Logo.png">
@@ -36,114 +36,57 @@ especialidad, tipos de cafe, cafe origen, filtrado.">
 
 <!-- End Header -->
 <!-- Main --> 
-<div class="">
-<div class="row">
- <div class="col-lg-4 col-xs-12">
-<img class="img-fluid" src="..\assets\img\natha.jpg ">
- </div> 
-<div class="col-lg-8 col-xs-12 border">
-<form method="POST" action="/index.php" class="needs-validation" novalidate>
+ <div class="content">
 
-    <div class="form-row mt-5">
-        <div class="col-md-4 mb-3">
-            <label for="validarNombre">Nombre:<span class="red">*</span></label>
-            <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+        <h1 class="logo">Contact <span>Us</span></h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contact us</h3>
+                <form action="">
+                    <p>
+                        <label>NOMBRE</label>
+                        <input class="input-form" type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>E-MAIL</label>
+                        <input class="input-form" type="email" name="email">
+                    </p>
+                    <p>
+                        <label>TELEFONO</label>
+                        <input class="input-form" type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>OTRO</label>
+                        <input class="input-form" type="text" name="affair">
+                    </p>
+                    <p class="block">
+                       <label>MENSAJE</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            ENVIAR
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Calle SempreViva</li>
+                    <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
+                    <li><i class="fas fa-envelope-open-text"></i> contact@moleculainfusiones.com</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                <p>MoleculaInfusiones.com</p>
+            </div>
         </div>
+
     </div>
 
-    <div class="form-row">
-        <div class="col-md-4 mb-3">
-            <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
-            <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
-        </div>
-    </div>
-
-    <div class="form-row">
-        <div class="col-md-4 mb-3">
-            <label for="validarEmail">Email:<span class="red">*</span></label>
-            <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
-        </div>
-    </div>
-
-    <div class="form-row">
-        <div class="col-md-4 mb-3">
-            <label for="validarTelefono">Teléfono:</label>
-            <input type="number" class="form-control" id="validarTelefono" name="validarTelefono" max="999999999">
-        </div>
-    </div>
-
-    <div class="form-row">
-        <div class="col-md-4 mb-3">
-            <label for="validarTema">Tema:<span class="red">*</span></label>
-            <select class="custom-select" id="validarTema" name="validarTema" required>
-                <option selected disabled value="">Selecciona...</option>
-                <option value="Problema con acceso a Web">Problema con acceso a Web</option>
-                <option value="Propuesta de colaboración">Propuesta de colaboración</option>
-                <option value="Eliminar mi usuario de la Web">Eliminar mi usuario de la Web</option>
-                <option value="Otras cuestiones">Otras cuestiones</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="form-row">
-        <div class="col-md-4 mb-3">
-            <label for="validarAsunto">Asunto:</label>
-            <input type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label for="validationMensaje">Mensaje:<span class="red">*</span></label>
-        <textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25" required></textarea>
-    </div>
-
-    <div class="form-group mb-10">
-        <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
-        <button class="btn btn-success" type="reset" name="reset">Limpiar</button>
-    </div>
-
-</form>
-</div>
-</div>  
-</div>
 <!-- END MAIN -->
 <!-- footer -->
-    <footer class="text-center text-white">
-  <!-- Grid container -->
-  <div class="container p-4 pb-0">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-      <!-- Facebook -->
-      <a
-        class="btn btn-primary btn-floating m-1"
-        style="background-color: #3b5998;"
-        href="#!"
-        role="button"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-
-      <!-- Instagram -->
-      <a
-        class="btn btn-primary btn-floating m-1"
-        style="background-color: #ac2bac;"
-        href="#!"
-        role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
-
-            <!-- Github -->
-      <a
-        class="btn btn-primary btn-floating m-1"
-        style="background-color: #333333;"
-        href="#!"
-        role="button"
-        ><i class="fab fa-github"></i
-      ></a>
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
-</footer>
 <!-- End Footer -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>

@@ -1,10 +1,16 @@
 /* Nosotros.html */
-body {background:grey;}
+body {background: #181818;}
 h1{text-align:center}
-p {
-    padding: 10px;
-}
+p {padding: 10px;}
 .contenedor-grid-nav{background: #c7beb1;}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;}
+
+
 
 /*media mobile grid nav */
 @media only screen and (min-width: 0px) and (max-width: 768px){
@@ -12,7 +18,7 @@ p {
 .contenedor-grid-nav{
 display: grid;
 grid-template-columns: 1fr 3fr;
-  grid-template-rows: 80px;
+  grid-template-rows: 85px;
   grid-template-areas: "logo nav";
   background: #c7beb1;
 							}
@@ -27,8 +33,12 @@ grid-template-columns: 1fr 3fr;
   max-width: 200px;
   background: #c7beb1;
   font-variant: small-caps;
-  text-shadow: 1px 1px black;
+  color: black;
+   &:hover { color: $colbtnnav !important;
+        font-weight: bold;
 }
+}
+
 .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
   position: absolute;
   box-sizing: border-box;
@@ -74,7 +84,8 @@ grid-template-columns: 1fr 3fr;
 .logo{
 display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
+
 }
 }
 /*media mobile grid nav */
@@ -85,7 +96,7 @@ display: flex;
 .contenedor-grid-nav{
 display: grid;
 grid-template-columns: 1fr 10fr;
-grid-template-rows: 80px;
+grid-template-rows: 84px;
 grid-template-areas: "logo nav";
 align-items: center;}
 
@@ -108,8 +119,11 @@ nav a {
   color: black;
   text-decoration: none;
   display: flex;
-  padding: 10px;
+  
   max-width: 100%;
+   &:hover { color: $colbtnnav !important;
+        font-weight: bold;
+}
   }
 li{
 	width: 100%	;
@@ -130,6 +144,12 @@ i .fas fa-bars {
 }
 input{display: none;
 }
+
+.logo{
+display: flex;
+    justify-content: center;
+    align-items: baseline;}
+
 }
 /*media desktop grid nav */
 

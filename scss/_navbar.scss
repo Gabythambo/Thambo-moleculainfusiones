@@ -5,7 +5,7 @@ padding-left: 0px;
         padding-right: 0px;
         background-color: $colornav;
 .nav-link { font-variant: small-caps;
-    text-shadow: 1px 1px black;
+    font-variant: small-caps;
     }
 }	
 .barra a {color: black !important;  
@@ -17,8 +17,12 @@ padding-left: 0px;
 }	
 /*fin anidando nav*/
 
+a.navbar-brand {
+padding: 10px;
+margin: 0;}
+
 li.nav-item {
-padding-right: 30px;
+padding-right: 20px;
 margin: 0px;
 }
 
