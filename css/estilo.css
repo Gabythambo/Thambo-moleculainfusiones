@@ -1,39 +1,79 @@
-/*anidando nav*/
-.barra {
-  padding-left: 0px;
-  padding-right: 0px;
-  background-color: #c7beb1; }
-  .barra .nav-link {
-    font-variant: small-caps;
-    font-variant: small-caps; }
+/*Variables colores*/
+/*Variables colores*/
+/*Inicio Index*/
+.parallax {
+  background-image: url("../assets/img/cafeweb.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.barra a {
-  color: black !important;
-  text-decoration: none; }
-  .barra a:hover {
-    color: #272623 !important;
-    font-weight: bold; }
+h1.inicio.animate__animated.animate__backInDown.text-center {
+  color: black; }
 
-/*fin anidando nav*/
-a.navbar-brand {
-  padding: 10px;
-  margin: 0; }
+/*Fin Index*/
+/*extend botones*/
+.btn, .btn--carrousel, .btn--card {
+  width: 150px;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 2px -1px 4px rgba(255, 255, 255, 0.8); }
 
-li.nav-item {
-  padding-right: 20px;
-  margin: 0px; }
+.btn--carrousel {
+  background-color: green;
+  color: black; }
 
-div .collapse .navbar-collapse {
-  width: 100%; }
+.btn--card {
+  background-color: red;
+  color: black; }
 
-.navbar-nav {
-  width: 100%; }
+/*Comienzo carrusel*/
+.carousel-indicators li {
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  background-color: #404040; }
 
-/* METODOS.HTML */
-div.cardsize {
-  align-self: center;
+.carousel-indicators .active {
+  background-color: #635b3b;
+  max-width: 12px;
+  margin: 0 3px;
+  height: 12px; }
+
+/*Fin carrusel*/
+/*Inicio Card MIXIN*/
+.card-img-top {
+  margin: 0em;
+  padding: 1em; }
+
+/* FIN MIXIN*/
+.card-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-self: center; }
 
+.card {
+  font-size: 1em;
+  overflow: hidden;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  margin: 20px;
+  background: #222222;
+  display: flex;
+  justify-content: center; }
+
+.card-boddy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+/*Inicio Card MIXIN*/
+/*Inicio Variedades*/
 /*APLICANDO MAPGET*/
 .estilovariedades {
   background-color: none;
@@ -47,11 +87,11 @@ div.cardsize {
     border-radius: 0.28571rem;
     box-shadow: 0 1px 3px 0 #d4d4d5; }
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 576px) {
   .estilovariedades {
     width: 100%; } }
 
-@media only screen and (min-width: 768px) and (max-width: 1800px) {
+@media only screen and (min-width: 576px) and (max-width: 1800px) {
   .estilovariedades {
     width: 100%;
     align-items: center;
@@ -67,75 +107,95 @@ table {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.parallax {
-  background-image: url("../assets/img/cafeweb.jpg");
-  min-height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+/*Fin Variedades*/
+/*anidando nav*/
+.barra {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #c7beb1; }
+  .barra .nav-link {
+    font-variant: small-caps;
+    font-variant: small-caps; }
 
-h1.inicio.animate__animated.animate__backInDown.text-center {
-  color: black; }
-
-.carousel-indicators li {
-  border-radius: 12px;
-  width: 12px;
-  height: 12px;
-  background-color: #404040; }
-
-.carousel-indicators .active {
-  background-color: #635b3b;
-  max-width: 12px;
-  margin: 0 3px;
-  height: 12px; }
-
-/*extend botones*/
-.btn, .btn--carrousel, .btn--card {
-  width: 150px;
-  background-color: white;
-  text-align: center;
+.barra a {
   color: black;
-  border-radius: 10px;
-  border: 1px solid black;
-  text-shadow: 4px 4px 2px rgba(199, 190, 177, 0.8); }
+  text-decoration: none; }
+  .barra a:hover {
+    color: #272623;
+    font-weight: bold; }
 
-.btn--carrousel {
-  background-color: green;
-  color: green; }
+/*fin anidando nav*/
+a.navbar-brand {
+  padding: 10px;
+  margin: 0; }
 
-.btn--card {
-  background-color: red;
-  color: yellow; }
+li.nav-item {
+  padding-right: 20px;
+  margin: 0px; }
 
-/*MIXIN*/
-.card-img-top {
-  width: 100%;
-  heigth: 100%; }
+ul.navbar-nav {
+  justify-content: space-around; }
 
-/*FIN MIXIN*/
-.card-block {
-  font-size: 18px;
-  position: relative;
-  margin: 10px;
-  padding: 1em;
-  border: solid;
-  border-top: 10px solid rgba(34, 36, 38, 0.1);
-  box-shadow: none; }
+div .collapse .navbar-collapse {
+  width: 100%; }
 
-.card {
-  font-size: 1em;
-  overflow: hidden;
-  padding: 5;
-  border: none;
-  border-radius: .28571429rem;
-  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-  margin: 20px 10px;
-  background: #222222; }
+.navbar-nav {
+  width: 100%; }
 
-div.cardsize {
-  align-self: center;
-  justify-self: center; }
+/*Fin nav*/
+/*Inicio Footer*/
+.footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
+  color: #fff; }
+
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: inherit; }
+
+.list-inline-item {
+  display: inline-block; }
+
+.list-inline-item:not(:last-child) {
+  margin-right: 0; }
+
+.list-inline {
+  padding-left: 0;
+  list-style: none; }
+
+/*media desk grid footer */
+.grid-contenedor-footer {
+  display: grid;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 100px;
+  grid-template-areas: "texto-footer logo-footer";
+  align-items: center; }
+
+.logo-footer {
+  grid-area: logo-footer;
+  display: flex;
+  justify-content: end;
+  padding-right: 2rem; }
+
+.texto-footer {
+  grid-area: texto-footer;
+  padding-left: 2rem; }
+
+.flex {
+  display: flex;
+  align-items: center; }
+
+p.text-muted.small.mb-lg-0 {
+  font-size: x-small;
+  color: grey;
+  padding: 10px; }
+
+/*Fin Footer*/
+* {
+  box-sizing: border-box; }
 
 /* Nosotros.html */
 body {
@@ -220,7 +280,7 @@ p {
   .contenedor-grid-nav {
     display: grid;
     grid-template-columns: 1fr 10fr;
-    grid-template-rows: 84px;
+    grid-template-rows: 94px;
     grid-template-areas: "logo nav";
     align-items: center; }
   .logo {
@@ -236,16 +296,16 @@ p {
     display: flex;
     padding: 10px 20px;
     max-width: 100%;
-    font-variant: small-caps; }
+    font-variant: small-caps;
+    justify-content: space-around; }
   nav a {
     color: black;
     text-decoration: none;
-    display: flex;
-    max-width: 100%; }
+    display: flex; }
     nav a:hover {
       color: #272623 !important;
       font-weight: bold; }
-  li {
+  .li-nav-grid {
     width: 100%;
     list-style-type: none; }
   .respmenu input:checked ~ nav {
@@ -315,9 +375,7 @@ p {
     grid-column-start: span 2; } }
 
 /*inicio contenedor galeria*/
-* {
-  box-sizing: border-box; }
-
+/*Inicio Contacto*/
 body {
   background: #181818;
   color: #fff;
@@ -402,6 +460,7 @@ ul {
   .contact-info h4, .contact-info ul, .contact-info p {
     text-align: left; } }
 
+/*Fin Contacto*/
 * {
   margin: 0px;
   padding: 0px;
