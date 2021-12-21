@@ -214,22 +214,36 @@ a {
   p.text-muted.small.mb-lg-0 {
     font-size: small;
     color: #636060;
-    padding: 10px; } }
+    padding: 10px; }
+  .list-inline {
+    padding: 5px; }
+  .list-inline:hover {
+    color: #1c0b81; }
+  .fa-2x:hover {
+    color: #6d2451; } }
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .texto-footer {
     grid-area: texto-footer;
     display: flex;
     flex-direction: column;
-    text-align: center; }
+    text-align: center;
+    padding: 10px; }
   .logo-footer {
     grid-area: logo-footer;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 10px; }
   p.text-muted.small.mb-lg-0 {
     font-size: small;
     color: #636060;
-    padding: 10px; } }
+    padding-bottom: 10px; }
+  .list-inline {
+    padding: 5px; }
+  .list-inline:hover {
+    color: #1c0b81; }
+  .fa-2x:hover {
+    color: #6d2451; } }
 
 /*Fin Footer*/
 * {
