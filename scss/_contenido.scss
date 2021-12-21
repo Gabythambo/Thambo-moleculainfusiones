@@ -147,7 +147,7 @@ margin:0px;
 align-items: center;;
 }
 
-
+@media only screen and (min-width: 576px) and (max-width: 1800px) {
 table {
     background-image:  url("../assets/img/img-tabla.jpg");
  background-position: center;
@@ -157,8 +157,8 @@ font-size: 16px;
 line-height: 0px;
 box-shadow: 10px 10px 3px #fff;
 }
-
-@media only screen and (min-width: 0px) and (max-width: 576px){}
+}
+@media only screen and (min-width: 0px) and (max-width: 576px){
 table {
   background-image:  url("../assets/img/img-tabla.jpg");
 background-position: center;
@@ -167,6 +167,7 @@ background-size: cover;
 font-size: 8px;
 line-height: 10px;
 box-shadow: 10px 10px 3px #fff;
+}
 }
 
 
