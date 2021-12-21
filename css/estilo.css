@@ -15,7 +15,7 @@ h1.inicio.animate__animated.animate__backInDown.text-center {
 /*Fin Index*/
 /*extend botones*/
 .btn, .btn--carrousel, .btn--card {
-  width: 150px;
+  width: 250px;
   text-align: center;
   color: black;
   border-radius: 10px;
@@ -43,49 +43,58 @@ h1.inicio.animate__animated.animate__backInDown.text-center {
   margin: 0 3px;
   height: 12px; }
 
-/*Fin carrusel*/
-/*Inicio Card MIXIN*/
-.card-img-top {
-  margin: 0em;
-  padding: 1em; }
-
-/* FIN MIXIN*/
 .card-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-self: center; }
 
+/*Fin carrusel*/
+/*Inicio Card MIXIN*/
+.card-img-top {
+  margin: 0em;
+  padding: 1em; }
+
+@media only screen and (min-width: 576px) {
+  .card-body {
+    max-height: 250px;
+    min-height: 250px;
+    width: 100%; }
+  .btn.btn-sm.btn-outline-secondary, .btn-sm.btn-outline-secondary.btn--carrousel, .btn-sm.btn-outline-secondary.btn--card {
+    color: #beb1c7; } }
+
+/* FIN MIXIN*/
 .card {
   font-size: 1em;
   overflow: hidden;
   border: none;
   border-radius: .28571429rem;
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-  margin: 20px;
-  background: #222222;
-  display: flex;
-  justify-content: center; }
+  background: #222222; }
 
-.card-boddy {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+.title {
+  color: #fff; }
 
 /*Inicio Card MIXIN*/
 /*Inicio Variedades*/
 /*APLICANDO MAPGET*/
 .estilovariedades {
   background-color: none;
-  position: center; }
+  position: center;
+  border-radius: 6rem; }
   .estilovariedades p {
     background-color: #181818;
-    text-align: center;
+    text-align: justify;
     padding-top: 1rem;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 0.28571rem;
-    box-shadow: 0 1px 3px 0 #d4d4d5; }
+    font-size: 15px;
+    font-weight: italic;
+    border-radius: 2.28571rem;
+    box-shadow: 0 5px 1px 0 #4b3300; }
+
+h2 {
+  padding-top: 10px;
+  color: #ffff;
+  text-shadow: 5px 5px 10px #ffff; }
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .estilovariedades {
@@ -105,7 +114,19 @@ table {
   background-image: url("../assets/img/cafe.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  font-size: 16px;
+  line-height: 0px;
+  box-shadow: 10px 10px 3px #fff; }
+
+table {
+  background-image: url("../assets/img/cafe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 8px;
+  line-height: 10px;
+  box-shadow: 10px 10px 3px #fff; }
 
 /*Fin Variedades*/
 /*anidando nav*/
@@ -125,12 +146,15 @@ table {
     font-weight: bold; }
 
 /*fin anidando nav*/
+.navbar-toggler.navbar-dark.bg-dark {
+  margin-right: 20px; }
+
 a.navbar-brand {
   padding: 10px;
   margin: 0; }
 
 li.nav-item {
-  padding-right: 20px;
+  padding-left: 10px;
   margin: 0px; }
 
 ul.navbar-nav {
