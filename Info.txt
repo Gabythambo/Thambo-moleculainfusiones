@@ -1,0 +1,23 @@
+**Proyecto Final **
+
+Framework de Bootstrap: Index.html, Variedades.html y Metodos.html
+Grid: Nosotros.html , Contacto.html
+
+Estilos de estructuras Fuentes, fondos y animaciones.
+Box Modeling.
+Flex.
+fontawesome.com
+Aos
+animate.style
+SEO
+Git
+
+
+Procesadores de CSS.
+Node.js
+Utilizacion de Mixin, extend y de Maps en SASS.
+
+Github: https://gabythambo.github.io/Thambo-moleculainfusiones/index.html
+Hosting: https://app.infinityfree.net/
+Dominio FTP: http://cafelamolecula.lovestoblog.com/index.html
+
