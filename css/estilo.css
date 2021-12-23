@@ -14,21 +14,26 @@ h1.inicio.animate__animated.animate__backInDown.text-center {
 
 /*Fin Index*/
 /*extend botones*/
-.btn, .btn--carrousel, .btn--card {
+.btn, .btn--carrousel, .btn-group {
   width: 250px;
   text-align: center;
-  color: black;
+  color: #884c07;
   border-radius: 10px;
   border: 1px solid black;
   box-shadow: 2px -1px 4px rgba(255, 255, 255, 0.8); }
 
 .btn--carrousel {
-  background-color: green;
+  background-color: #635a4f;
   color: black; }
 
-.btn--card {
-  background-color: red;
-  color: black; }
+.btn-group {
+  background-color: rgba(218, 110, 38, 0.288);
+  color: #884c07;
+  align-self: center; }
+
+.justify-content {
+  -ms-flex-pack: justify !important;
+  justify-content: center; }
 
 /*Comienzo carrusel*/
 .carousel-indicators li {
@@ -60,7 +65,7 @@ h1.inicio.animate__animated.animate__backInDown.text-center {
     max-height: 250px;
     min-height: 250px;
     width: 100%; }
-  .btn.btn-sm.btn-outline-secondary, .btn-sm.btn-outline-secondary.btn--carrousel, .btn-sm.btn-outline-secondary.btn--card {
+  .btn.btn-sm.btn-outline-secondary, .btn-sm.btn-outline-secondary.btn--carrousel, .btn-sm.btn-outline-secondary.btn-group {
     color: #beb1c7; } }
 
 /* FIN MIXIN*/
@@ -399,7 +404,8 @@ p {
   background: linear-gradient(rgba(255, 255, 255, 0.3), black);
   width: 100%;
   margin: 0px;
-  padding: 3px; }
+  padding: 3px;
+  font-size: 18PX; }
 
 .gallery__item:nth-child(1) {
   grid-column-end: span 2; }
@@ -426,7 +432,7 @@ p {
   .gallery__item:nth-child(6) {
     grid-column-start: span 2; } }
 
-/*inicio contenedor galeria*/
+/*FIN contenedor galeria*/
 /*Inicio Contacto*/
 body {
   background: #181818;
@@ -444,7 +450,7 @@ ul {
   padding: 0; }
 
 .logo span {
-  color: #B70E21; }
+  color: #b70e21; }
 
 .contact-wrapper {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); }
@@ -478,18 +484,18 @@ ul {
   background: none;
   outline: 0;
   color: #fff;
-  border-bottom: 1px solid #d63031;
+  border-bottom: 1px solid #c252074f;
   display: block; }
 
 .contact-form form button {
-  background: #B70E21;
+  background: #c252074f;
   border: 0;
   text-transform: uppercase;
   padding: 1em; }
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #d63031;
+  background: #c252074f;
   color: #fff;
   transition: background-color 1s ease-out;
   outline: 0; }

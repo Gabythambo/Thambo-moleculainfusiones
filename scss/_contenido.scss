@@ -3,6 +3,7 @@ $colornav: #c7beb1;
 $colbtnnav: #272623;
 $bgvariedades: #181818;
 $bgsecvariedades: #beb1c7;
+$colorcontacto: #c252074f;
 /*Variables colores*/
 /*Inicio Index*/
 .parallax {
@@ -22,7 +23,7 @@ h1.inicio.animate__animated.animate__backInDown.text-center {
 .btn {
   width:250px;
   text-align:center;
-  color:black;
+  color:#884c07;
   border-radius:10px;
   border:1px solid black;
   box-shadow: 2px -1px 4px rgba(255,255,255, 0.8);
@@ -31,14 +32,19 @@ h1.inicio.animate__animated.animate__backInDown.text-center {
 
 .btn--carrousel{
   @extend .btn;
-  background-color:green;
+  background-color:rgb(99, 90, 79);
   color:black;
 }
 
-.btn--card{
+.btn-group{
   @extend .btn;
-  background-color:red;
-  color:black;
+  background-color:rgba(218, 110, 38, 0.288);
+  color: #884c07;
+  align-self: center;
+}
+.justify-content {
+  -ms-flex-pack: justify!important;
+  justify-content: center;
 }
 
 /*Comienzo carrusel*/
